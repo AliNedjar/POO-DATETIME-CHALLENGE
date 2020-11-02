@@ -1,13 +1,12 @@
 <?php
 
-$destinationTime = DateTime::createFromFormat('M j Y g:i a', 'OCT 21 2015 4:29 pm');
+$destinationTime = DateTime::createFromFormat('M j Y g:i a', 'OCT 21 2022 4:29 pm');
 echo $destinationTime->format('M j Y g:i a'); ?> <br> <?php
 echo 'Destination Time'; ?> <br> <?php
 
-
-$presentTime = DateTime::createFromFormat('M j Y g:i a', 'OCT 21 2015 4:06 pm');
+$presentTime = new DateTime();
 echo $presentTime->format('M j Y g:i a'); ?> <br> <?php
-echo 'Destination Time'; ?> <br> <?php
+echo 'Present Time'; ?> <br> <?php
 
 
 $interval = $presentTime->diff($destinationTime);
